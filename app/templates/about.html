@@ -1,0 +1,44 @@
+{% extends "appbuilder/base.html" %}
+{% block content %}
+
+    
+    <style>
+        .content.active {
+          overflow: auto;
+        }
+        
+    </style>
+    
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="well well-sm">
+                    <div style="letter-spacing:0px;color:rgb(61,90,146);text-align:center">
+                        <b style="font-size:24pt;letter-spacing:0px"><font face="arial, sans-serif">About</font></b>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="well">
+                    <p class="lead">SPA2MDH is a small web page to quickly upload SPA files to the MDH.</p>
+                    <p><span class="glyphicon glyphicon-ok"></span> The files will be later uploaded to Teradata. </p>
+                    <p></p><span class="glyphicon glyphicon-ok"></span> Login is required, contact the MDH for access.</p>
+                    
+                    <p class='text-right'>For more information about the MDH please visit our <a href="http://go.roche.com/dac">DAC portal website</a>.</p>
+                    
+                    <p class='text-right'>This webpage was developed using the python package <a href="http://flaskappbuilder.pythonanywhere.com/">FlaskAppBuilder</a>.</p>
+                    
+                    <p class='text-right'>For questions or suggestions please contact the developers: <a href="mailto:otto.fajardo@roche.com">Otto Fajardo</a><span class="glyphicon glyphicon-envelope"></span> and <a href="mailto:iori.namekawa@roche.com">Iori Namekawa</a><span class="glyphicon glyphicon-envelope"></span>. 
+                    </p>
+                    
+                    <!--<p class='text-right'>Special thanks to Ewa Chalupniczak (ADMD) for her collaboration during the project.</p>-->
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    
+{% endblock %}
