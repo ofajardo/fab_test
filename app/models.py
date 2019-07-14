@@ -52,7 +52,8 @@ class UploadRegistry(Model):
     
     fab_id = Column(Integer, primary_key=True, nullable=False)
     car_brand = Column(Enum(*['Toyota', 'Peugot']))
-    car_model = Column(Enum(*['Toyota Corola', 'Toyota Pickup', 'Peugot Solaris', 'Peugot Cresida']))
+    car_model = Column(Enum(*['Toyota Corola', 'Toyota Pickup', 'Peugot Solaris', 'Peugot Cresida', "Other"]))
+    car_other = Column(String(60))
     created = Column(DateTime, default=currentdate, onupdate=currentdate, nullable=False)    
     uploaded_file_name = Column(FileColumn)
         
@@ -83,6 +84,7 @@ CREATE TABLE "upload_registry" (
     fab_id             INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
     car_brand          STRING,
     car_model           STRING,
+    car_other           STRING,
     created            DATETIME NOT NULL,
     uploaded_file_name TEXT
     

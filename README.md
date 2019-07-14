@@ -9,7 +9,8 @@ task:
 
 Go to the Upload File tab, you will see dropdowns for car brand and car model.
 The idea is that if the user selects Toyota only the toyota models will show in the
-next dropdown. 
+next dropdown. The field car_other should by default be hidden and should appear only
+if the user selects other in car model.
 The relevant files to modify are in the folder app, view.py and eventually model.py.
 
 This has been created using flaskappbuilder, which in turn uses WTForms. 
