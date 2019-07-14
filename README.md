@@ -1,9 +1,9 @@
 # fab_test
 
-1- create a virtual environment, activate it
-2- pip install -r requirements.txt
-3- Create an admin user: flask fab create-admin
-4- run the application: flask run
+1. create a virtual environment, activate it
+2. pip install -r requirements.txt
+3. Create an admin user: flask fab create-admin
+4. run the application: flask run
 
 task:
 
